@@ -3,8 +3,8 @@ __pycache__/
 .eggs
 bower_components/
 typings/
-js/
-!js/config.js
+project/static/scripts/js/*
+!project/static/scripts/js/config.js
 env/
 *.swp
 node_modules/
