@@ -1,0 +1,14 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "module": "umd",
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "outDir": "project/static/scripts/js"
+  },
+  "files": [
+    "typings/index.d.ts",
+    "project/static/scripts/ts/charting.ts",
+    "project/static/scripts/ts/main.ts"
+  ]
+}

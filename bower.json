@@ -1,0 +1,23 @@
+{
+  "name": "test-website",
+  "description": "A test website",
+  "main": "index.js",
+  "authors": [
+    "Guðmundur Heimisson"
+  ],
+  "license": "Apache-2.0",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./project/static/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "^3.5.17",
+    "requirejs": "^2.2.0"
+  }
+}
