@@ -1,12 +1,16 @@
 var gulp = require('gulp');
 var typescript = require('gulp-typescript');
 var less = require('gulp-less');
+var sourcemaps = require('gulp-sourcemaps');
 var tsProject = typescript.createProject('tsconfig.json', {outDir: '../js', rootDir: 'project/static/scripts/ts'});
 
 gulp.task('ts', function() {
   var result = tsProject.src()
+    .pipe(sourcemaps.init())
     .pipe(typescript(tsProject));
-  return result.pipe(gulp.dest('project/static/scripts/js'));
+  return result.js
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('project/static/scripts/js'));
 });
 
 gulp.task('less', function() {

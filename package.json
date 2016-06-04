@@ -8,6 +8,7 @@
   },
   "author": "Guðmundur Heimisson",
   "license": "Apache-2.0",
+  "repository": "https://github.com/gudmundur-heimisson/test-website",
   "devDependencies": {
     "bower": "^1.7.9",
     "gulp": "^3.9.1",
