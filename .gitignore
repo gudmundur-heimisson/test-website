@@ -8,4 +8,7 @@ project/static/scripts/js/*
 env/
 *.swp
 node_modules/
-
+.jshintrc
+.npmignore
+.settings/
+.project
