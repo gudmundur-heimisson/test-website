@@ -7,7 +7,7 @@ var tsProject = typescript.createProject('tsconfig.json', { outDir: '../js', roo
 gulp.task('ts', function () {
   var result = tsProject.src()
     .pipe(sourcemaps.init())
-    .pipe(typescript(tsProject));
+    .pipe(tsProject());
   return result.js
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('project/static/scripts/js'));
